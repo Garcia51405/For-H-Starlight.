@@ -11,7 +11,7 @@ canvas {
     background: #111;
 }
 
-#valentinesButton {
+#Button {
     display: none;
     position: absolute;
     background-color: #2d2dff;
@@ -28,7 +28,8 @@ canvas {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 
-  #valentinesButton:hover {
+  #Button:hover {
     background-color: #1f1faa;
     color: #eee;
 }
+
