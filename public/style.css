@@ -1,34 +1,22 @@
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
+body {
+    margin: 0;
     overflow: hidden;
-    cursor: url('./images/pointer.png'), auto;
+    background: black;
+    font-family: Comic Sans MS, sans-serif;
 }
 
-canvas {
-    width: 100%;
-    height: auto;
-    background: #111;
-}
-
-#valentinesButton {
+/* Hide audio controls */
+audio {
     display: none;
-    position: absolute;
-    background-color: #2d2dff;
-    border: 2px solid #2d2dff;
-    color: #fff;
-    cursor: pointer;
-    height: 50px;
-    font-size: 16px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    border-radius: 10px;
-    top: calc(50% + 150px); /* Adjust based on canvas height and text position */
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
+}
 
-  #valentinesButton:hover {
-    background-color: #1f1faa;
-    color: #eee;
+/* PHONE VERSION —  background,  text,  starl */
+@media only screen and (max-width: 800px) {
+    canvas {
+        background: black !important;
+    }
+
+    body, canvas {
+        color: white !;
+    }
 }
